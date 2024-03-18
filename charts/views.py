@@ -1,5 +1,8 @@
 import io
 from django.http import HttpResponse
+import matplotlib
+
+matplotlib.use("Agg")
 from matplotlib.backends.backend_agg import FigureCanvasAgg
 import matplotlib.pyplot as plt
 
