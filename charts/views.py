@@ -20,6 +20,8 @@ def generate_chart(request):
         data_labels = ["Label 1", "Label 2", "Label 3"]  # Default labels
         data_values = [4, 2, 7]  # Default values
 
+    width_in_inches = request.GET.get("width")
+    height_in_inches = request.GET.get("height")
     # Set the size of the plot
     width_in_inches = 720 / 96  # Convert pixels to inches
     height_in_inches = 180 / 96  # Convert pixels to inches
